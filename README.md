@@ -3,8 +3,9 @@ acppc(Advanced C++ Compiler) is a simple compiler designed for C++. This compile
 
 ## Content
 - [Technologes](#technologes)
-- [Start work](#start-work)
-- [Testing](#testing)
+- [Usage](#usage)
+- [Develop](#develop)
+- [Requirements](#requirements)
 - [Contributing](#contributing)
 - [Project team](#project-team)
 
