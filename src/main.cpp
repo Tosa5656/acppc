@@ -1,5 +1,6 @@
 #include <iostream>
 #include "../include/argsmanager.h"
+#include "../include/projectconfigmanager.h"
 
 int main(int argc, char *argv[])
 {
@@ -22,6 +23,5 @@ int main(int argc, char *argv[])
         i++;
     }
 
-    
-    system("pause");
+    ProjectConfigManager projectConfigManager(projectPathString);
 }
