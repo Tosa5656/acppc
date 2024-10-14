@@ -13,7 +13,13 @@ acppc(Advanced C++ Compiler) is a simple compiler designed for C++. This compile
 - [gcc/g++]([https://www.gatsbyjs.com/](https://gcc.gnu.org/))
 
 ## Usage
-In the project folder, create CompileConfig (to be added later).
+In the project folder, create ProjectConfig.txt:
+```ProjectConfig.txt example
+project = Test
+sources_dir = src/
+include_dir = include/
+output_name = test
+```
 Open the console and go to your project folder and write the command:
 ```sh
 $ acppc . -o build/
