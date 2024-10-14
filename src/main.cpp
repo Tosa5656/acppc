@@ -4,12 +4,24 @@
 int main(int argc, char *argv[])
 {
     ArgsManager args_manager(argc, argv);
-    std::cout << "Args length: " << args_manager.args_length << std::endl;
-    std::cout << "Args: " << std::endl;
+
+    int projectPathArg = 0;
+    int outputDirectoryArg = 0;
+    std::string projectPathString;
+    std::string outputDirectoryString;
+
+    int i = 0;
     for(std::string arg : args_manager.args)
     {
-        std::cout << arg << std::endl;
+        if(i == projectPathArg) projectPathString = args_manager.args[i];
+        if(arg == "-o")
+        {
+            outputDirectoryArg = i + 1;
+            outputDirectoryString = args_manager.args[outputDirectoryArg];
+        }
+        i++;
     }
 
+    
     system("pause");
 }
