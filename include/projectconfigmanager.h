@@ -1,12 +1,14 @@
+#pragma once
+
 #include <iostream>
 #include <fstream>
 #include <filesystem>
 #include <string>
 #include <regex>
 
-using namespace std::filesystem;
+#include "../include/info.h"
 
-bool IS_DEBUG = true;
+using namespace std::filesystem;
 
 class ProjectConfigManager
 {

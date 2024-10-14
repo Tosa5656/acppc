@@ -1,4 +1,5 @@
 #include <iostream>
+#include "../include/info.h"
 #include "../include/argsmanager.h"
 #include "../include/projectconfigmanager.h"
 
